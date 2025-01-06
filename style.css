@@ -1,0 +1,311 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+  position: relative;
+}
+.header{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    z-index: 5;
+}
+.header.hover{
+  z-index: -5;
+}
+svg{
+    position: absolute;
+    left:0px;
+    margin: 20px;
+    height: 40px;
+    width: 100px;
+}
+
+.blog{
+    position: absolute;
+    left: 50%;
+    right: 45%;
+    margin: 20px;
+    font-weight: lighter;
+}
+.blog:hover{
+    color: burlywood;
+}
+.contact{
+    position: absolute;
+    left: 44%;
+    right: 50%;
+    margin: 20px;
+    font-weight: lighter;
+}
+.contact:hover{
+    color: burlywood;
+}
+.log{
+    position: absolute;
+    border: 2px solid white ;
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    line-height: 28px;
+    text-align: center;
+   right:10px;
+    margin: 20px;
+}
+.log:hover{
+   color: black;
+   background-color: #FFFFFF;
+}
+.pg{
+    display: flex;
+    height: 130vh;
+    width: 100%;
+}
+.male{
+    height: 130vh;
+    width: 50%;
+    flex-direction: column;
+    background-image: url(./assests/male.jpg);
+     background-size: cover;
+}
+.male-blur{
+  position: relative;
+    height: 130vh;
+    width: 100%;
+}
+.male:hover{
+    width: 85%;
+    transition: 0.5s ease-in-out;
+ }
+ .male-blur:hover{
+    backdrop-filter:blur(8px); 
+ }
+.btns{
+  padding: 20%;
+  height: 100%;
+  opacity: 0;
+}
+.btns:hover{
+  opacity: 1;
+}
+.body{
+  position: relative;
+    height: 100px;
+    width: 220px;
+  font-size: 60px;
+  line-height: 100px;
+  margin: 30px;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.body:hover{
+    color: rgb(230, 172, 97);
+    border: 3px solid rgb(230, 172, 97);
+    border-radius: 45px;
+  }
+.body::before{
+  content: '';
+   position: absolute;
+   bottom: 30px;
+ right: 180px;
+   height: 0px;
+   width: 0px;
+   transition: 0.9s ease;
+   background-image: url(./assests/m-body.jpg);
+   background-size: 200px;
+   transform: rotate(6deg);
+   object-fit: cover;
+   z-index: -7;
+}
+.body:hover.body::before{
+   height: 250px;
+   width: 200px;
+}
+.skin{
+  height: 100px;
+  width: 220px;
+font-size: 60px;
+line-height: 100px;
+    margin: 30px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.skin:hover{
+    color: rgb(230, 172, 97);
+    border: 3px solid rgb(230, 172, 97);
+    border-radius: 45px;
+  }
+  .skin::before{
+    content: '';
+     position: absolute;
+     bottom: 230px;
+    right: 200px;
+     height: 0px;
+     width: 0px;
+     transition: 0.9s ease;
+     background-image: url(./assests/m-skin.jpg);
+     background-size: 200px;
+     transform: rotate(6deg);
+     object-fit: cover;
+     z-index: -7;
+  }
+  .skin:hover.skin::before{
+     height: 250px;
+     width: 200px;}
+
+  .hair{
+    height: 100px;
+    width: 220px;
+  font-size: 60px;
+  line-height: 100px;
+    text-align: center;
+    margin: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .hair:hover{
+    color: rgb(230, 172, 97);
+    border: 3px solid rgb(230, 172, 97);
+    border-radius: 45px;
+  }
+  .hair::before{
+    content: '';
+     position: absolute;
+     bottom: 140px;
+    right: 100px;
+    left: 10px;
+     height: 0px;
+     width: 0px;
+     transition: 0.9s ease;
+     background-image: url(./assests/m-hair.jpg);
+     background-size: 200px;
+     transform: rotate(6deg);
+     object-fit: cover;
+     z-index: -7;
+  }
+  .hair:hover.hair::before{
+     height: 250px;
+     width: 200px;
+    }
+.txt1{
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    font-size: 70px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 1;
+}
+.txt1:hover{
+opacity: 0;
+}
+a{
+  text-decoration: none;
+}
+.female{
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    background-image: url(./assests/female.jpg);
+    background-size: cover;
+}
+.female-blur{
+  position: relative;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.female:hover{
+  transition: 0.5s ease-in-out;
+    width: 85%;
+}
+.female-blur:hover{
+    backdrop-filter: blur(8px);
+}
+.f-body{
+  height: 100px;
+  width: 220px;
+font-size: 60px;
+line-height: 100px;
+  margin: 30px;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.f-body:hover{
+    color: rgb(230, 172, 97);
+    border: 3px solid rgb(230, 172, 97);
+    border-radius: 45px;
+  }
+  .f-body::before{
+    content: '';
+     position: absolute;
+     bottom: 500px;
+  left: 10px;
+     height: 0px;
+     width: 0px;
+     transition: 0.9s ease;
+     background-image: url(./assests/f-body.jpg);
+     background-size: 200px;
+     transform: rotate(6deg);
+     object-fit: cover;
+     z-index: -7;
+  }
+  .f-body:hover.f-body::before{
+     height: 250px;
+     width: 200px;}
+.f-skin{
+  height: 100px;
+  width: 220px;
+font-size: 60px;
+line-height: 100px;
+    margin: 30px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.f-skin:hover{
+    color: rgb(230, 172, 97);
+    border: 3px solid rgb(230, 172, 97);
+    border-radius: 45px;
+  }
+  .f-skin::before{
+    content: '';
+     position: absolute;
+     bottom: 200px;
+    right: 195px;
+     height: 0px;
+     width: 0px;
+     transition: 0.9s ease;
+     background-image: url(./assests/f-skin.jpg);
+     background-size: 200px;
+     transform: rotate(6deg);
+     z-index: -7;
+     object-fit: cover;
+  }
+  .f-skin:hover.f-skin::before{
+    height: 250px;
+    width: 200px;
+    }
+  .txt2{
+    position: absolute;
+    right: 200px;
+    bottom: 100px;
+    font-size: 65px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+     opacity: 1;
+  }
+  .txt2::backdrop{
+    opacity: 0;
+  }
+  .f-body:hover.txt1:hover{
+   
+  }
